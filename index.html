@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+    <h1>Kyra Nicole Arona</h1>
+    <h2>Summary</h2>
+    <img src="./assets/kyra_profile.jpeg" height="200" alt="Profile picture of Kyra Nicole Arona"/>
+    <p>I am a software engineer interested in machine learning and web development.</p>
+
+    <hr />
+
+    <h2>Education</h2>
+    <ul></ul>
+    <h3>University of California—Berkeley (2017-2021)</h3>
+    <p>
+        B.A. Computer Science<br />
+        Minor in Data Science<br />
+        GPA 3.565
+    </p>
+    <p>Technical coursework:
+    <ul>
+        <li>Programming Structures</li>
+        <li>Data Structures</li>
+        <li>Computer Architecture / Machine Structures</li>
+        <li>Principles and Techniques of Data Science</li>
+        <li>Discrete Mathematics and Probability Theory</li>
+        <li>Introduction to Artificial Intelligence</li>
+        <li>User Interface Design and Development</li>
+        <li>Computer Security</li>
+        <li>Efficient Algorithms and Intractable Problems</li>
+        <li>Probability and Random Processes</li>
+        <li>Natural Language Processing</li>
+        <li>Machine Learning</li>
+    </ul>
+    </p>
+    <hr />
+
+    <h2>Work Experience</h2>
+    <h3>Software Development Engineer I—Amazon Web Services (AWS)</h3>
+    <p>
+        Sunnyvale, CA<br />
+        July 2021 - February 2023
+    </p>
+    <ul>
+        <li>
+            Packet processing Data Plane Development Kit (DPDK) applications: Infrastructure support and large-scale deployments for a network virtualization application in addition to developing, testing, and maintaining the code. The fleet consisted of several types of AWS EC2 instances.
+        </li>
+        <li>
+            Configuration transport, deployment, and monitoring applications: Maintained, debugged, applied patches, and updated java-based packages that transport configurations to and from the various types of EC2 instances. Monitored and analyzed metrics to find errors and potential improvements and implement them.
+        </li>
+        <li>
+            Subject matter expert for fleet component tests: Component tests are tests for specific types of EC2 instances, orchestrated with python and bash-based code.
+        </li>
+        <li>
+            Change management (MCM) execution: Supported a high-risk and highly-regulated environment by carefully designing and assembling CMs and executing them after several tiers of approval. Most frequently used to build resources in new zones or maintain them in older zones to improve security and performance.
+        </li>
+        <li>
+            Wrote design documents and implementation documents for various projects
+        </li>
+        <li>
+            Oncall: Provided bimonthly weekly oncall for AWS customer support and infrastructure maintenance. Debugged and troubleshooted issues, rerouting as needed. Coordinated with cross-functional teams to fix issues or investigate further. Participated in working sessions to troubleshoot issues for VIP customers. Presented summary of deployments, metrics, oncall tickets, and retrospectives at team-level operations meetings and higher-level joint-ops meetings.
+        </li>
+        <li>
+            Participated in biweekly sprint planning and retrospectives; used Agile/Scrum methodology with an internal simple issue manager.
+        </li>
+    </ul>
+    <p>Notable projects:</p>
+    <ul>
+        <li>
+            Onboarding effort to expand the hyperplane service to use IPv6 addresses
+            <ul>
+                <li>
+                    Refactored the C-basted unit test suite and Python-based component test suites to support IPv6 use case 
+                </li>
+                <li>
+                    Executed and validated tests and made sure they caused no memory leaks in the case of the C tests before deploying
+                </li>
+            </ul>
+        </li>
+        <li>
+            MCM to switch to larger cloud subnets in most zones when they were running out of available IP addresses
+            <ul>
+                <li>
+                    Wrote a script to analyze existing subnets across the zones. Designed the MCM to fit the modern safety requirements and tested it on a gamma stage instance, including rollback processes. Submitted for multi-layered approval before executing it.
+                </li>
+            </ul>
+        </li>
+        <li>
+            EC2 Image Metadata Service version 2 (IMDSv2)
+            <ul>
+                <li>
+                    As part of AWS's company-wide campaign to onboard their services to the session-based IMDSv2 to increase security, took charge of eliminating request-based calls of the previous version (v1) from the team's packages. 
+                </li>
+                <li>
+                    Investigated and traced the source of v1 calls throughout the codebase, made the code changes to fix the issues, tested through , tracked the deployment through the pipelines, documented
+                </li>
+            </ul>
+        </li>
+        <li>
+            EC2 instance configuration transport, deployment, and metrics
+            <ul>
+                <li>
+                    Designed and developed a container package to allow the application to be run locally rather than by deploying through pipelines, speeding up testing and giving more control in development.
+                </li>
+                <li>
+                    Onboarded, tested, and validated the beta pipeline of our configuration transport service from JDK8 to JDK17 to improve performance of the instances.
+                </li>
+                <li>
+                    Documented and analyzed the metrics related to heap usage and garbage collection to show benefits and improvements. 
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Software Development Engineering Intern—Amazon Web Services (AWS)</h3>
+    <p>
+        Virtual location<br />
+        May 2020 - August 2020
+    </p>
+    <ul>
+        <li>
+            Network packet processing end-to-end test integration: Upgraded the Python-based component test orchestrator to use multiple EC2 instances in a test to simulate the entire stack made of different components. Wrote a Python/bash-based test that creates and routes packets through all the components, then verifies that the packet was processed correctly.
+        </li>
+    </ul>
+    <p>
+    <h3>Software Development Engineering Intern—Amazon Web Services (AWS)</h3>
+    <p>
+       Cupertino, CA<br />
+        May 2019 - August 2019
+    </p>
+    <ul>
+        <li>
+            Standard CloudFormation Templates: Designed, developed, and deployed a Python-based package from scratch to create an AWS CloudFormation stack out of AWS resources (Virtual Private Cloud, subnet, EC2 instances, etc.) and team-specific resources. This allows team members to set up a stack to perform tests. The stack would otherwise have to be manually set up in a time-consuming manner.
+        </li>
+    </ul>
+    <p>
+
+    <hr />
+
+    <h2>Skills</h2>
+    <ul>
+        <li>
+            Programming languages: Java, Python, C, Go, RISC-V, HTML, JSON, SQL, Typescript, Ruby, Perl, Scheme (Dialect of Lisp)
+        </li>
+        <li>
+            Amazon Web Services: Elastic Cloud Computing (EC2), CloudFormation, Cloudwatch, Redshift
+        </li>
+        <li>
+            Python libraries: Pandas, Numpy, boto3
+        </li>
+        <li>
+            Linux OS, bash, zsh
+        </li>
+        <li>
+            GitHub
+        </li>
+        <li>
+            VSCode, IntelliJ
+        </li>
+        <li>
+            Change management execution
+        </li>
+        <li>
+            Agile/Scrum methodology; used an issue tracking tool similar to Jira
+        </li>
+    </ul>
+
+    <hr />
+    <h2>Links</h2>
+    <ul>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="./hobbies.html">Hobbies</a>
+        </li>
+    </ul>
+    <footer>
+        <p>© Kyra Nicole Arona. All rights reserved.</p>
+    </footer>
+</body>
+</html>
